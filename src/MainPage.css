@@ -1,0 +1,21 @@
+.main__page {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  /* gap: 40px; */
+  color: var(--main-color);
+  background-color: var(--secondary-color);
+}
+
+/* for narrowed window */
+@media (max-width: 1200px) {
+  .main__page {
+    flex-direction: column-reverse;
+    height: auto;
+    /* gap: 0px; */
+  }
+}
+
+/* for mobile screens */
+@media (max-width: 640px) {
+}

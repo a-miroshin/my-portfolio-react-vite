@@ -1,0 +1,80 @@
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+
+  --true-black: #000000;
+  --black: #1a1a1a;
+  --true-white: #ffffff;
+  --white: #dadada;
+}
+
+[data-theme="light"] {
+  --main-color: var(--black);
+  --secondary-color: var(--true-white);
+  --accent-color: var(--black);
+  --focal-color: var(--true-black);
+}
+
+[data-theme="dark"] {
+  --main-color: var(--white);
+  --secondary-color: var(--black);
+  --accent-color: var(--white);
+  --focal-color: var(--true-white);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  transition: 300ms ease-in-out;
+}
+
+::selection {
+  background-color: var(--accent-color); /* Цвет фона выделенного текста */
+  color: var(--secondary-color); /* Цвет текста при выделении */
+}
+
+h1 {
+  padding-bottom: 1rem;
+  font-size: 2em;
+}
+
+.tooltip__wrapper {
+  position: relative;
+  display: inline;
+  background: none;
+  border: none;
+  text-decoration: none;
+}
+
+.tooltip {
+  /* display: inline-block; */
+  display: block;
+
+  position: absolute;
+  z-index: 1;
+  user-select: none;
+  font-size: 0.8em;
+
+  /* font: optional; */
+  /* font-weight: 500; */
+  color: var(--focal-color);
+  background-color: var(--secondary-color);
+  border: var(--main-color) 1px solid;
+
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 5px 10px;
+  /* border-radius: 4px; */
+  white-space: nowrap;
+}

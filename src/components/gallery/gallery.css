@@ -1,0 +1,75 @@
+.gallery {
+  padding: 40px;
+  padding-left: 20px;
+  overflow-y: scroll;
+  flex-basis: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  transition: 150ms ease-in-out;
+}
+
+a.card {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+  display: block; /* Ensure link covers entire card */
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card .image-container {
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  transition: transform 300ms ease-in-out;
+  /* align-self: stretch; */
+  /* object-fit: cover; */ /* Закомментил, потому что некрасиво рендерится */
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card .title {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.card .year {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 1600px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .gallery {
+    overflow-y: auto;
+    height: 100%;
+    padding: 20px;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

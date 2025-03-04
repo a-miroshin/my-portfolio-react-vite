@@ -1,0 +1,76 @@
+section.about {
+  padding: 40px;
+  padding-right: 20px;
+  flex-basis: 450px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  /* transition: 150ms ease-in-out; */
+}
+
+section.about h1 {
+  font-size: 1rem;
+}
+
+section.about > article {
+  padding-bottom: 20px;
+}
+
+section.about > article > p {
+  padding-bottom: 1rem;
+}
+
+/* my mailto link  */
+
+.email {
+  display: inline-block;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--accent-color);
+  color: var(--accent-color);
+
+  transition: unset;
+}
+
+.email:hover {
+  cursor: pointer;
+  color: var(--focal-color);
+  text-decoration-color: var(--focal-color);
+}
+
+.email:focus,
+.email:hover {
+  outline: none;
+  text-decoration: none;
+  color: var(--secondary-color);
+  background-color: var(--focal-color);
+}
+
+/* for narrowed screens */
+
+@media (max-width: 1200px) {
+  section.about {
+    flex-basis: auto;
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+  section.about > article {
+    columns: 2;
+    column-gap: 10px;
+  }
+}
+
+/* for mobile screens */
+
+@media (max-width: 640px) {
+  section.about > article {
+    columns: 1;
+    column-gap: unset;
+  }
+  section.about > article > p {
+    padding-bottom: 1rem;
+  }
+}

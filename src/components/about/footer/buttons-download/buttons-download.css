@@ -1,0 +1,65 @@
+.buttons-download-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: max-content;
+  margin-bottom: 20px;
+}
+
+.buttons-download-container > a {
+  display: flex; /* Используем flexbox для центрирования текста */
+  align-items: center; /* Центрируем по вертикали */
+  justify-content: center; /* Центрируем по горизонтали */
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+
+  transition: unset;
+}
+
+.buttons-download-container > a:focus,
+.buttons-download-container > a:hover {
+  color: var(--secondary-color);
+  background-color: var(--focal-color);
+  border-color: var(--focal-color);
+}
+
+.buttons-download-container > a:focus {
+  outline: none;
+}
+
+.buttons-download-container > a:visited {
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .buttons-download-container {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 640px) {
+  .buttons-download-container {
+    margin-bottom: 20px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .buttons-download-container > a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .buttons-download-container {
+    flex-direction: column;
+  }
+}
