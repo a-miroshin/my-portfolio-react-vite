@@ -13,7 +13,7 @@ import project12 from "@assets/images/previews/project-12-min.jpg";
 import project13 from "@assets/images/previews/project-13-min.jpg";
 import project14 from "@assets/images/previews/project-14-min.jpg";
 import project15 from "@assets/images/previews/project-15-min.jpg";
-import project16 from "@assets/images/previews/project-16-min.png";
+import project16 from "@assets/images/previews/project-16-min.jpg";
 
 const projects = [
   {
