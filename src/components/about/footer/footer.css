@@ -67,6 +67,13 @@ ul.socials li > a[title="LinkedIn"]::after {
 
 @media (max-width: 640px) {
   .footer {
+    display: flex;
+    /* width: 100%; */
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
     display: block;
     width: 100%;
   }

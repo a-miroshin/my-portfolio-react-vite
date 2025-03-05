@@ -11,9 +11,9 @@ const ButtonDownload = ({ url, title }) => {
       download
       className="button-download" // Стили для кнопки
       onClick={handleClick}
-      aria-label={`Download ${title}`} // Доступность
+      aria-label={`Download ${title} ↓`} // Доступность
     >
-      Download {title}
+      Download {title} ↓
     </a>
   );
 };

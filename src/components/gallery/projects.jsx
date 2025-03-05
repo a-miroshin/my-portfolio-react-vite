@@ -13,6 +13,7 @@ import project12 from "@images/previews/project-12-min.jpg";
 import project13 from "@images/previews/project-13-min.jpg";
 import project14 from "@images/previews/project-14-min.jpg";
 import project15 from "@images/previews/project-15-min.jpg";
+import project16 from "@images/previews/project-16-min.png";
 
 const projects = [
   {
@@ -119,6 +120,13 @@ const projects = [
     date: "2023-01-15",
     link: "#",
     image: project15,
+  },
+  {
+    id: 16,
+    title: "Project 16",
+    date: "2025-01-12",
+    link: "#",
+    image: project16,
   },
 ];
 
