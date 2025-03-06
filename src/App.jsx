@@ -1,10 +1,10 @@
 import About from "@components/about/about";
 import Gallery from "@components/gallery/gallery";
 
-import "./MainPage.css";
+import "./App.css";
 // import "./touch-devices.css";
 
-const MainPage = () => {
+const App = () => {
   const preferences = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const isDark = preferences;
 
@@ -16,4 +16,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default App;
