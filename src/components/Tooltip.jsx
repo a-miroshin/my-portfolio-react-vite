@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const Tooltip = ({ children, text }) => {
+const Tooltip = ({ children, text }) => {
   const [isVisible, setIsVisible] = useState(false);
   //   const isVisible = true;
 
@@ -19,3 +19,5 @@ export const Tooltip = ({ children, text }) => {
     </span>
   );
 };
+
+export default Tooltip;

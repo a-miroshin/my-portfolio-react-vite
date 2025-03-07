@@ -1,6 +1,6 @@
 import React from "react";
 
-import ButtonDownload from "./button";
+import ButtonDownload from "./Button";
 import cvUrl from "@assets/downloads/Alexander_Miroshin_CV.pdf";
 import PortfolioUrl from "@assets/downloads/Alexander_Miroshin_Portfolio.pdf";
 

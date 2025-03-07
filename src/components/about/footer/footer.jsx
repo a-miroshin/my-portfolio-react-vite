@@ -4,7 +4,7 @@
 // import instagramIcon from "./icons/instagram.svg";
 // import linkedinIcon from "./icons/linkedin.svg";
 
-import ButtonDownloadContainer from "./buttons-download/container";
+import ButtonDownloadContainer from "./buttons-download/ButtonsContainer";
 import "./footer.css";
 
 const Footer = () => {

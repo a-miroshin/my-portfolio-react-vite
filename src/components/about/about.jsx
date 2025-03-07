@@ -1,7 +1,7 @@
-import Footer from "@components/about/footer/footer";
+import Footer from "@components/about/footer/Footer";
 import "./about.css";
 
-import { Tooltip } from "@components/Tooltip";
+import Tooltip from "@components/Tooltip";
 
 const About = () => {
   const email = "miroshin.architect@gmail.com";
