@@ -1,5 +1,5 @@
-import About from "@components/about/about";
-import Gallery from "@components/gallery/gallery";
+import About from "@components/about/About";
+import Gallery from "@components/gallery/Gallery";
 
 import "./App.css";
 // import "./touch-devices.css";
