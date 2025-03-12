@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
+import "./tooltip.css";
+
 const Tooltip = ({ children, text }) => {
   const [isVisible, setIsVisible] = useState(false);
   //   const isVisible = true;
-
   return (
     <span
       className="tooltip__wrapper"

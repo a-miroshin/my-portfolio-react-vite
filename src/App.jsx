@@ -1,8 +1,7 @@
-import About from "@components/about/About";
+import Info from "@components/info/Info";
 import Gallery from "@components/gallery/Gallery";
 
 import "./App.css";
-// import "./touch-devices.css";
 
 const App = () => {
   const preferences = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -10,7 +9,7 @@ const App = () => {
 
   return (
     <div className="main__page" data-theme={isDark ? "dark" : "light"}>
-      <About />
+      <Info />
       <Gallery />
     </div>
   );

@@ -1,7 +1,4 @@
-import Footer from "@components/about/footer/Footer";
-import "./about.css";
-
-import Tooltip from "@components/Tooltip";
+import Tooltip from "@components/tooltip/Tooltip";
 
 const About = () => {
   const email = "miroshin.architect@gmail.com";
@@ -17,8 +14,9 @@ const About = () => {
   };
 
   return (
-    <section className="about">
-      <h1>About me</h1>
+    <div className="about">
+      {/* <h1>About me</h1> */}
+      <h1>Alexander Miroshin</h1>
       <article>
         <p>
           My name is Alexander Miroshin. I'm an architect and concept artist who
@@ -38,8 +36,7 @@ const About = () => {
           or...
         </p>
       </article>
-      <Footer />
-    </section>
+    </div>
   );
 };
 

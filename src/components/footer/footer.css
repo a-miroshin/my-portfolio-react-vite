@@ -1,0 +1,27 @@
+/* for narrowed window */
+
+@media (max-width: 1200px) {
+  .footer {
+    /* width: auto; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* for mobile screens */
+
+@media (max-width: 640px) {
+  .footer {
+    display: flex;
+    /* width: 100%; */
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    display: block;
+    width: 100%;
+  }
+}

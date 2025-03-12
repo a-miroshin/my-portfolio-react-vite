@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   height: 100vh;
-  /* gap: 40px; */
   color: var(--main-color);
   background-color: var(--secondary-color);
 }
@@ -12,10 +11,5 @@
   .main__page {
     flex-direction: column-reverse;
     height: auto;
-    /* gap: 0px; */
   }
-}
-
-/* for mobile screens */
-@media (max-width: 640px) {
 }

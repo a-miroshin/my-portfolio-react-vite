@@ -1,0 +1,52 @@
+ul.social-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+ul.social-links li {
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+ul.social-links li > a {
+  position: relative; /* Добавлено для псевдоэлемента */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  transition: unset;
+}
+
+ul.social-links li > a:focus {
+  outline: none;
+}
+
+ul.social-links li > a::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: var(--accent-color);
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+ul.social-links li > a:hover::after,
+ul.social-links li > a:focus::after {
+  background-color: var(--focal-color);
+}
+
+ul.social-links li > a[title="Instagram"]::after {
+  mask-image: url(./icons/instagram.svg);
+}
+
+ul.social-links li > a[title="Telegram"]::after {
+  mask-image: url(./icons/telegram.svg);
+}
+
+ul.social-links li > a[title="LinkedIn"]::after {
+  mask-image: url(./icons/linkedin.svg);
+}
