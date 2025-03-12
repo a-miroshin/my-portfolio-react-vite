@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: row;
   height: 100vh;
-  color: var(--main-color);
-  background-color: var(--secondary-color);
 }
 
 /* for narrowed window */

@@ -32,6 +32,8 @@ ul.social-links li > a::after {
   background: var(--accent-color);
   mask-repeat: no-repeat;
   mask-position: center;
+
+  transition: none;
 }
 
 ul.social-links li > a:hover::after,

@@ -7,9 +7,12 @@
 .buttons-download-container hr {
   border: none;
   height: 1px;
+  /*height: 5px; for the test purpose*/
   margin: 0px;
   padding: 0px;
-  background-color: var(--main-color);
+  background-color: var(--focal-color);
+  /* background-color: rgb(84, 84, 84); */
+  z-index: -1;
 }
 
 .buttons-download-container > a {
@@ -17,18 +20,25 @@
   text-decoration: none;
   font-family: "Inter", sans-serif;
   padding: 5px 0px;
-  color: var(--accent-color);
+  /* color: var(--focal-color); */
+  color: var(--focal-color);
 
-  transition: unset;
+  transition: none;
+  user-select: none;
 }
 
 .buttons-download-container > a:focus,
 .buttons-download-container > a:hover {
   color: var(--secondary-color);
   background-color: var(--focal-color);
-  border-color: var(--focal-color);
+  /* border-color: red; */
   padding-left: 5px;
   padding-left: 5px;
+  /* border-top: 10px; */
+  /* border: 4px; */
+  /* z-index: 1000; */
+
+  transition: none;
 }
 
 .buttons-download-container > a:focus {

@@ -30,6 +30,7 @@ a.card {
   width: 100%;
   aspect-ratio: 16 / 9;
   transition: transform 300ms ease-in-out;
+  user-select: none;
   /* align-self: stretch; */
   /* object-fit: cover; */ /* Закомментил, потому что некрасиво рендерится */
 }
