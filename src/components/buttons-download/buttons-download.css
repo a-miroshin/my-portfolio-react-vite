@@ -20,23 +20,23 @@
   text-decoration: none;
   font-family: "Inter", sans-serif;
   padding: 5px 0px;
-  /* color: var(--focal-color); */
   color: var(--focal-color);
 
   transition: none;
   user-select: none;
 }
 
+/* [data-theme="light"] .buttons-download-container > a {
+  font-weight: 500;
+} */
+
 .buttons-download-container > a:focus,
 .buttons-download-container > a:hover {
   color: var(--secondary-color);
   background-color: var(--focal-color);
-  /* border-color: red; */
   padding-left: 5px;
   padding-left: 5px;
-  /* border-top: 10px; */
-  /* border: 4px; */
-  /* z-index: 1000; */
+  font-weight: 400;
 
   transition: none;
 }
