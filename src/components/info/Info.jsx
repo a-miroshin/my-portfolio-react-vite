@@ -6,8 +6,10 @@ import "./info.css";
 const Info = () => {
   return (
     <section className="info">
+      {/* <div className="content"> */}
       <About />
       <Footer />
+      {/* </div> */}
     </section>
   );
 };

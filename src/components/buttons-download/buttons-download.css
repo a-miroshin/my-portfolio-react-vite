@@ -5,14 +5,9 @@
 }
 
 .buttons-download-container hr {
+  height: 0px;
   border: none;
-  height: 1px;
-  /*height: 5px; for the test purpose*/
-  margin: 0px;
-  padding: 0px;
-  background-color: var(--focal-color);
-  /* background-color: rgb(84, 84, 84); */
-  z-index: -1;
+  border-top: 1px solid var(--focal-color);
 }
 
 .buttons-download-container > a {
@@ -24,6 +19,9 @@
 
   transition: none;
   user-select: none;
+
+  /* font-family: monospace; */
+  font-size: 1.2rem;
 }
 
 /* [data-theme="light"] .buttons-download-container > a {

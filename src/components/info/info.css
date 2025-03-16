@@ -1,30 +1,19 @@
-section.info {
-  padding: 40px;
-  padding-right: 20px;
-  flex-basis: 450px;
-
-  display: flex;
-  flex-direction: column;
-  /* justify-content: flex-end; */
-  justify-content: space-between;
-
-  /* transition: 150ms ease-in-out; */
-}
-
 .about > h1 {
   font-size: 3rem;
-  padding-bottom: 1rem;
+  padding-bottom: var(--page-padding);
   color: var(--focal-color);
 }
 
 .about > article {
-  padding-bottom: 20px;
+  padding-bottom: var(--page-padding);
   /* color: var(--main-color); */
   color: var(--accent-color);
 }
 
 .about > article > p {
-  padding-bottom: 1rem;
+  padding-bottom: var(--page-padding);
+  font-size: 1.1rem;
+  /* font-family: monospace; */
 }
 
 /* my mailto link  */
@@ -37,7 +26,7 @@ section.info {
 }
 
 .email:hover {
-  cursor: pointer;
+  cursor: url("../../assets/icons/flame.svg"), pointer;
 }
 
 .email:focus,
@@ -45,6 +34,7 @@ section.info {
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-thickness: 1px;
+
   color: var(--focal-color);
   text-decoration-color: var(--focal-color);
 }
@@ -52,14 +42,9 @@ section.info {
 /* for narrowed screens */
 
 @media (max-width: 1200px) {
-  section.info {
-    flex-basis: auto;
-    padding: 20px;
-    padding-bottom: 60px;
-  }
   .about > article {
     columns: 2;
-    column-gap: 10px;
+    column-gap: var(--page-padding);
   }
 }
 
@@ -71,6 +56,6 @@ section.info {
     column-gap: unset;
   }
   .about > article > p {
-    padding-bottom: 1rem;
+    padding-bottom: var(--page-padding);
   }
 }
