@@ -6,8 +6,11 @@ import "./footer.css";
 const Footer = () => {
   return (
     <div className="footer">
-      <ButtonsDownloadContainer />
-      <SocialLinks />
+      <div className="footer__buttons">
+        <ButtonsDownloadContainer />
+        <SocialLinks />
+      </div>
+      <p className="footnote">This website is built by its owner</p>
     </div>
   );
 };

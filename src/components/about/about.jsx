@@ -1,4 +1,4 @@
-import Tooltip from "@components/tooltip/Tooltip";
+import TextWithTooltip from "@components/tooltip/Tooltip";
 
 const About = () => {
   const email = "miroshin.architect@gmail.com";
@@ -15,7 +15,6 @@ const About = () => {
 
   return (
     <div className="about">
-      {/* <h1>About me</h1> */}
       <h1>Alexander Miroshin</h1>
       <article>
         <p>
@@ -28,11 +27,11 @@ const About = () => {
         </p>
         <p>
           You can mail me at{" "}
-          <Tooltip text="Copied to clipboard!">
+          <TextWithTooltip text="Copied to clipboard!">
             <span className="email" onClick={copyEmailToClipboard}>
               {email}
-            </span>{" "}
-          </Tooltip>
+            </span>
+          </TextWithTooltip>{" "}
           or...
         </p>
       </article>

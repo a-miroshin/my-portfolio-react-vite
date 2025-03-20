@@ -1,11 +1,3 @@
-ul.social-links {
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 12px;
-}
-
 ul.social-links li {
   display: block;
   height: 24px;
@@ -23,22 +15,26 @@ ul.social-links li > a {
 
 ul.social-links li > a:focus {
   outline: none;
+  /* outline-color: var(--main-color); */
+  /* outline: 1px solid var(--main-color); */
+  border-radius: 0px;
+  scale: 110%;
+  /* border: 1px dashed blue; */
 }
 
 ul.social-links li > a::after {
   content: "";
   width: 24px;
   height: 24px;
-  background: var(--accent-color);
+  background: var(--focal-color);
   mask-repeat: no-repeat;
   mask-position: center;
 
   transition: none;
 }
 
-ul.social-links li > a:hover::after,
-ul.social-links li > a:focus::after {
-  background-color: var(--focal-color);
+ul.social-links li > a:hover::after {
+  background-color: var(--main-color);
 }
 
 ul.social-links li > a[title="Instagram"]::after {

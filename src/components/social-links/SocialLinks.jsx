@@ -7,7 +7,7 @@ const SocialLinks = () => {
         <a href="https://t.me/a_miroshin" title="Telegram"></a>
       </li>
       <li>
-        <a href="https://www.instagram.com/dra.www.me/" title="Instagram"></a>
+        <a href="https://www.instagram.com/a__miroshin/" title="Instagram"></a>
       </li>
       <li>
         <a

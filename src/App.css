@@ -56,7 +56,6 @@
     height: max-content;
     flex-basis: auto;
     padding: var(--page-padding);
-    padding-bottom: 60px;
   }
 
   .gallery {
@@ -71,6 +70,10 @@
 }
 
 @media (max-width: 640px) {
+  .main__page {
+    padding-bottom: 2rem; /*safe space for iphone button*/
+  }
+
   .gallery {
     grid-template-columns: 1fr;
     gap: var(--grid-gap);

@@ -4,9 +4,13 @@
   }
 }
 
-:root {
-  font-family: "Inter", sans-serif;
+:root,
+button,
+a {
+  font-family: "Inter", Helvetica, sans-serif;
+}
 
+:root {
   --true-black: #000000;
   --black: #1a1a1a;
   --true-white: #ffffff;
@@ -48,30 +52,3 @@ body {
   background-color: var(--focal-color); /* Цвет фона выделенного текста */
   color: var(--secondary-color); /* Цвет текста при выделении */
 }
-
-/* scrollbar */
-/* ::-webkit-scrollbar {
-  background-color: transparent;
-  width: 12px;
-} */
-
-/* scrollbar handle */
-/* ::-webkit-scrollbar-thumb {
-  background: var(--accent-color);
-  border: 4px solid var(--secondary-color);
-} */
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--main-color);
-  cursor: pointer;
-}
-
-::-webkit-scrollbar-thumb:active {
-  cursor: grab;
-}
-
-/* @supports (scrollbar-color: var(--accent-color) var(--main-color)) {
-  * {
-    scrollbar-color: var(--accent-color) var(--main-color);
-  }
-} */

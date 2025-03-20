@@ -12,7 +12,7 @@
 
 .about > article > p {
   padding-bottom: var(--page-padding);
-  font-size: 1.1rem;
+  font-size: 1rem;
   /* font-family: monospace; */
 }
 
@@ -20,23 +20,23 @@
 
 .email {
   display: inline-block;
-  text-decoration: none;
-  transition: unset;
+  /* text-decoration: none; */
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+  text-decoration-thickness: 1px;
   color: var(--focal-color);
+
+  transition: unset;
 }
 
 .email:hover {
-  cursor: url("../../assets/icons/flame.svg"), pointer;
+  cursor: pointer;
 }
 
 .email:focus,
 .email:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 1px;
-
-  color: var(--focal-color);
-  text-decoration-color: var(--focal-color);
+  color: var(--main-color);
+  text-decoration-color: var(--main-color);
 }
 
 /* for narrowed screens */

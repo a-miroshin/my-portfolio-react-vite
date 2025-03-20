@@ -1,19 +1,13 @@
-.buttons-download-container {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
 .buttons-download-container hr {
   height: 0px;
   border: none;
   border-top: 1px solid var(--focal-color);
 }
 
-.buttons-download-container > a {
+.button-download {
   text-align: left;
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+
   padding: 5px 0px;
   color: var(--focal-color);
 
@@ -21,41 +15,48 @@
   user-select: none;
 
   /* font-family: monospace; */
-  font-size: 1.2rem;
+  /* font-size: 1rem; */
 }
 
-/* [data-theme="light"] .buttons-download-container > a {
-  font-weight: 500;
-} */
-
-.buttons-download-container > a:focus,
-.buttons-download-container > a:hover {
+.button-download:focus,
+.button-download:hover {
   color: var(--secondary-color);
   background-color: var(--focal-color);
   padding-left: 5px;
   padding-left: 5px;
-  font-weight: 400;
 
   transition: none;
 }
 
-.buttons-download-container > a:focus {
+.button-download:focus {
   outline: none;
 }
 
-.buttons-download-container > a:visited {
+.button-download:visited {
   text-decoration: none;
 }
 
-@media (max-width: 1200px) {
-  .buttons-download-container {
-    margin: 0px;
-    flex-direction: row;
-    gap: 10px;
-  }
-  .buttons-download-container > a {
-    padding: 5px 5px;
+/* specifying font weights  */
 
+[data-theme="light"] .button-download {
+  font-weight: 100;
+}
+
+[data-theme="light"] :where(.button-download:focus, .button-download:hover) {
+  font-weight: 400;
+}
+
+[data-theme="dark"] .button-download {
+  font-weight: 400;
+}
+
+[data-theme="dark"] :is(.button-download:focus, .button-download:hover) {
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .button-download {
+    padding: 5px 5px;
     border-width: 3px;
   }
 
@@ -65,27 +66,20 @@
 }
 
 @media (max-width: 640px) {
-  .buttons-download-container {
-    gap: 0px;
-  }
   .buttons-download-container hr {
     display: none;
   }
 
-  .buttons-download-container > a {
+  .button-download {
     padding: 5px 5px;
   }
 }
 
 @media (max-width: 500px) {
-  .buttons-download-container {
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
   .buttons-download-container hr {
     display: initial;
   }
-  .buttons-download-container > a {
+  .button-download {
     padding: 5px 0px;
   }
 }

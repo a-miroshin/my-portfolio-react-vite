@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./tooltip.css";
 
-const Tooltip = ({ children, text }) => {
+const TextWithTooltip = ({ children, text }) => {
   const [isVisible, setIsVisible] = useState(false);
   //   const isVisible = true;
   return (
@@ -21,4 +21,4 @@ const Tooltip = ({ children, text }) => {
   );
 };
 
-export default Tooltip;
+export default TextWithTooltip;

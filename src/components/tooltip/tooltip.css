@@ -1,13 +1,11 @@
 .tooltip__wrapper {
   position: relative;
-  display: inline;
-  background: none;
+  display: inline-block;
   border: none;
-  text-decoration: none;
 }
 
 .tooltip {
-  display: block;
+  display: inline;
   position: absolute;
   z-index: 1;
   user-select: none;
@@ -19,6 +17,6 @@
   transform: translateX(-50%);
 
   border: var(--main-color) 1px solid;
-  color: var(--focal-color);
+  color: var(--main-color);
   background-color: var(--secondary-color);
 }
