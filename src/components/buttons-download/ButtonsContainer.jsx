@@ -3,7 +3,7 @@ import PortfolioUrl from "@assets/downloads/Alexander_Miroshin_Portfolio.pdf";
 
 import ButtonDownload from "./Button";
 
-import "./buttons-download.css";
+// import "./buttons-download.css";
 
 const ButtonsDownloadContainer = () => {
   return (

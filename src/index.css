@@ -10,27 +10,26 @@ a {
   font-family: "Inter", Helvetica, sans-serif;
 }
 
-:root {
+/* :root {
   --true-black: #000000;
-  --black: #1a1a1a;
+  --black: #111111;
   --true-white: #ffffff;
   --white: #dadada;
   --light-gray: #a3a3a3;
-}
+} */
 
 [data-theme="light"] {
-  --focal-color: var(--true-black);
-  --main-color: var(--black);
-  --accent-color: var(--black);
-  --secondary-color: var(--true-white);
+  --main-color: #000000;
+  --secondary-color: #ffffff;
+  /* --focal-color: var(--true-black); */
+  /* --accent-color: var(--black); */
 }
 
 [data-theme="dark"] {
-  --focal-color: var(--true-white);
-  --main-color: var(--white);
-  /* --accent-color: var(--light-gray); */
-  --accent-color: var(--white);
-  --secondary-color: var(--black);
+  --main-color: #ffffff;
+  --secondary-color: #000000;
+  /* --focal-color: var(--true-white); */
+  /* --accent-color: var(--white); */
 }
 
 *,
@@ -43,12 +42,7 @@ a {
   transition: 300ms ease-in-out;
 }
 
-body {
-  color: var(--main-color);
-  background-color: var(--secondary-color);
-}
-
 ::selection {
-  background-color: var(--focal-color); /* Цвет фона выделенного текста */
+  background-color: var(--main-color); /* Цвет фона выделенного текста */
   color: var(--secondary-color); /* Цвет текста при выделении */
 }

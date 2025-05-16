@@ -26,7 +26,7 @@ ul.social-links li > a::after {
   content: "";
   width: 24px;
   height: 24px;
-  background: var(--focal-color);
+  background: var(--main-color);
   mask-repeat: no-repeat;
   mask-position: center;
 

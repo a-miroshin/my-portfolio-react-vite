@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./tooltip.css";
+// import "./tooltip.css";
 
 const TextWithTooltip = ({ children, text }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,7 +16,7 @@ const TextWithTooltip = ({ children, text }) => {
       }}
     >
       {children}
-      {isVisible && <span className="tooltip">{text}</span>}
+      {isVisible && <div className="tooltip">{text}</div>}
     </span>
   );
 };
