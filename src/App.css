@@ -16,13 +16,12 @@ body {
 }
 
 header {
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: fixed;
   z-index: 1;
   padding: 2rem;
-
   width: 100%;
 }
 
@@ -57,36 +56,8 @@ button#about-button {
   color: var(--main-color);
 }
 
-/* footer */
-
-/* .footer__buttons {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 1rem;
-} */
-
-/* 
-.buttons-download-container {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 1rem;
-} */
-
-/* .social-links {
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 12px;
-} */
-
 footer {
-  margin-bottom: 2rem;
-}
-
-footer p {
-  font-size: 0.7em;
+  padding: 2rem;
   text-align: center;
 }
 

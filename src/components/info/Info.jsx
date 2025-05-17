@@ -1,4 +1,4 @@
-import ButtonsDownloadContainer from "@components/buttons-download/ButtonsContainer";
+import ButtonDownload from "@components/buttons-download/ButtonDownload";
 import SocialLinks from "@components/social-links/SocialLinks";
 import AboutModalButton from "@components/about/AboutButton";
 
@@ -10,7 +10,14 @@ const Info = () => {
       {/* <About /> */}
       <h1>Alexander Miroshin</h1>
       <div className="footer">
-        <ButtonsDownloadContainer />
+        {/* <ButtonsDownloadContainer /> */}
+        <div className="buttons-download-container">
+          <hr />
+          <ButtonDownload url={cvUrl} title="CV" />
+          <hr />
+          <ButtonDownload url={PortfolioUrl} title="Portfolio" />
+          <hr />
+        </div>
         <div className="footer__buttons">
           <SocialLinks />
           <AboutModalButton />

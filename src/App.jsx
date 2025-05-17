@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 // import Info from "@components/info/Info";
 import Gallery from "@components/gallery/Gallery";
-import Footer from "@components/footer/Footer";
+// import Footer from "@components/footer/Footer";
 import AboutButton from "@components/about/AboutButton";
 
 import "./App.css";
@@ -24,7 +24,10 @@ const App = () => {
       </header>
       {/* <Info /> */}
       <Gallery />
-      <Footer />
+      {/* <Footer /> */}
+      <footer>
+        <small>The website is built by its owner</small>
+      </footer>
     </>
   );
 };

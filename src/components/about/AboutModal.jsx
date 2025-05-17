@@ -1,8 +1,8 @@
 import React, { forwardRef } from "react";
 
-import Footer from "@components/footer/Footer";
+// import Footer from "@components/footer/Footer";
 import TextWithTooltip from "@components/tooltip/Tooltip";
-import ButtonDownload from "@components/buttons-download/Button";
+import ButtonDownload from "@components/buttons-download/ButtonDownload";
 import cvUrl from "@assets/downloads/Alexander_Miroshin_CV.pdf";
 import PortfolioUrl from "@assets/downloads/Alexander_Miroshin_Portfolio.pdf";
 
@@ -32,15 +32,15 @@ const AboutModal = forwardRef((props, ref) => {
   return (
     <>
       <dialog ref={ref} id="about-dialog">
-        <header>
-          <h1>About</h1>
-          <button onClick={closeDialog} id="close-about">
-            back
-          </button>
-        </header>
-        <div className="article-wrapper">
+        <div className="content-wrapper">
+          <header>
+            <h1>About</h1>
+            <button onClick={closeDialog} id="close-about">
+              back
+            </button>
+          </header>
           <article>
-            <section>
+            <section className="message">
               <p>
                 Hello! My name is Alexander Miroshin. I'm an architect and
                 concept artist who strives for clean, functional, and attractive
@@ -92,8 +92,10 @@ const AboutModal = forwardRef((props, ref) => {
               </ul>
             </section>
           </article>
+          <footer>
+            <small>The website is built by its owner</small>
+          </footer>
         </div>
-        <Footer />
       </dialog>
     </>
   );
