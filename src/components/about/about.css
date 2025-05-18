@@ -15,26 +15,19 @@
   transition: unset;
 }
 
-#about-dialog .content-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-
-  transition: unset;
+#about-dialog main {
+  padding-top: 0;
+  height: 100%;
 }
 
-#about-dialog header {
-  position: relative;
+#about-dialog footer {
+  bottom: 0;
 }
 
 #about-dialog article {
   width: 100%;
-  max-width: 1200px;
-  padding: 2rem;
+  /* max-width: 1200px; */
+  /* padding: 2rem; */
   margin-left: auto;
   margin-right: auto;
 }

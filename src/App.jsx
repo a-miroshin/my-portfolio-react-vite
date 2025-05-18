@@ -19,12 +19,16 @@ const App = () => {
   return (
     <>
       <header>
-        <h1>Alexander Miroshin</h1>
-        <AboutButton />
+        <div className="header-content">
+          <h1>Alexander Miroshin</h1>
+          <AboutButton />
+        </div>
       </header>
-      {/* <Info /> */}
-      <Gallery />
-      {/* <Footer /> */}
+      <main>
+        {/* <Info /> */}
+        <Gallery />
+        {/* <Footer /> */}
+      </main>
       <footer>
         <small>The website is built by its owner</small>
       </footer>

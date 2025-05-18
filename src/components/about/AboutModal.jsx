@@ -32,13 +32,15 @@ const AboutModal = forwardRef((props, ref) => {
   return (
     <>
       <dialog ref={ref} id="about-dialog">
-        <div className="content-wrapper">
-          <header>
+        <header>
+          <div className="header-content">
             <h1>About</h1>
             <button onClick={closeDialog} id="close-about">
               back
             </button>
-          </header>
+          </div>
+        </header>
+        <main className="narrow">
           <article>
             <section className="message">
               <p>
@@ -92,10 +94,10 @@ const AboutModal = forwardRef((props, ref) => {
               </ul>
             </section>
           </article>
-          <footer>
-            <small>The website is built by its owner</small>
-          </footer>
-        </div>
+        </main>
+        <footer>
+          <small>The website is built by its owner</small>
+        </footer>
       </dialog>
     </>
   );
