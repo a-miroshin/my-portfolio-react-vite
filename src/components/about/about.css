@@ -110,4 +110,19 @@ div.email {
   #about-dialog .email {
     font-size: 5vw;
   }
+
+  small {
+    font-size: 0.5rem;
+  }
+}
+
+#about-dialog main {
+  height: unset;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  min-height: calc(100% - 3.5rem);
+}
+
+#about-dialog footer {
+  position: relative;
 }
