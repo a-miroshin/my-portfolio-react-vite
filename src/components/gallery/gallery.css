@@ -1,5 +1,6 @@
 .gallery {
   overflow-y: inherit;
+  /* padding: 0 4rem; */
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -21,7 +22,15 @@ a.card {
 .card .image-container {
   overflow: hidden;
   aspect-ratio: 1 / 1;
+  transform: scale(1);
+  will-change: transition;
+  transition: transform 300ms ease-in-out;
+
   /* padding: 2rem; */
+}
+
+.card .image-container:hover {
+  transform: scale(1.05);
 }
 
 .card img {
@@ -29,14 +38,15 @@ a.card {
   height: 100%;
   /* aspect-ratio: 1 / 1; */
   object-fit: contain;
-  transition: transform 300ms ease-in-out;
+  /* will-change: transition;
+  transition: transform 300ms ease-in-out; */
   user-select: none;
   /* align-self: stretch; */
 }
 
-.card:hover img {
+/* .card:hover img {
   transform: scale(1.05);
-}
+} */
 
 .card .title {
   padding-top: 10px;

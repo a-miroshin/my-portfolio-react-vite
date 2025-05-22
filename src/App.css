@@ -17,9 +17,9 @@ body {
 }
 
 main {
-  padding-top: 5rem;
-  padding-bottom: 2rem;
-
+  padding: 4rem 0 4rem 0;
+  /* padding-bottom: 2rem; */
+  /* margin: 2rem 0rem; */
   /* height: 100%; */
   display: flex;
   flex-direction: column;
@@ -27,8 +27,8 @@ main {
 }
 
 section {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 0 2rem;
+  /* padding-right: 2rem; */
 }
 
 header {
@@ -42,7 +42,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   /* width: 100%; */
-  padding: 2rem;
+  padding: 2rem 2rem;
 
   margin-left: auto;
   margin-right: auto;
@@ -69,17 +69,6 @@ header h1 {
   transition: 150ms ease-in-out;
 } */
 
-button#about-button {
-  margin: 0px;
-  padding: 0px;
-  background-color: transparent;
-  text-decoration: none;
-  border: none;
-  font-size: medium;
-  cursor: pointer;
-  color: var(--main-color);
-}
-
 footer {
   /* max-width: 1200px; */
   /* margin-left: auto; */
@@ -97,6 +86,15 @@ footer {
   /* max-width: var(--max-content-width); */
 }
 
+/* additional styles */
+
+.narrow {
+  margin-left: auto;
+  margin-right: auto;
+  /* max-width: var(--max-content-width); */
+  max-width: 1200px;
+}
+
 /* tooltip */
 
 .tooltip__wrapper {
@@ -105,11 +103,14 @@ footer {
   /* border: none; */
 }
 
+.tooltip__wrapper:hover {
+  cursor: pointer;
+}
+
 .tooltip {
   display: inline;
   position: absolute;
   z-index: 1;
-  user-select: none;
   font-size: 0.8em;
   padding: 5px 10px;
   white-space: nowrap;
@@ -120,15 +121,8 @@ footer {
   border: var(--main-color) 1px solid;
   color: var(--main-color);
   background-color: var(--secondary-color);
-}
-
-/* additional styles */
-
-.narrow {
-  margin-left: auto;
-  margin-right: auto;
-  /* max-width: var(--max-content-width); */
-  max-width: 1200px;
+  user-select: none;
+  cursor: initial;
 }
 
 /* for narrowed window */

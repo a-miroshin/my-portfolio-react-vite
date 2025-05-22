@@ -4,16 +4,18 @@
   }
 }
 
-:root {
+:root,
+button,
+a {
   font-family: Inter, sans-serif;
   font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
 }
 
-:root,
+/* :root,
 button,
 a {
   font-family: "Inter", Helvetica, sans-serif;
-}
+} */
 
 /* :root {
   --true-black: #000000;

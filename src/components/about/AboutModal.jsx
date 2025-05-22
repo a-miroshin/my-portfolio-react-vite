@@ -55,11 +55,11 @@ const AboutModal = forwardRef((props, ref) => {
             </section>
             <section className="contact-me">
               <h3>Contact me</h3>
-              <div className="email">
-                <TextWithTooltip text="Copied to clipboard!">
-                  <span onClick={copyEmailToClipboard}>{email}</span>
-                </TextWithTooltip>
-              </div>
+              <TextWithTooltip text="Copied to clipboard!">
+                <span onClick={copyEmailToClipboard} id="email">
+                  {email}
+                </span>
+              </TextWithTooltip>
               <h3>Socials</h3>
               <ul className="socials">
                 <li>
