@@ -51,20 +51,8 @@
 }
 
 #about-dialog p {
-  /* padding-bottom: var(--page-padding); */
   padding-bottom: 1rem;
   font-size: 2rem;
-}
-
-button#close-about {
-  margin: 0px;
-  padding: 0px;
-  background-color: transparent;
-  text-decoration: none;
-  border: none;
-  font-size: medium;
-  cursor: pointer;
-  color: var(--main-color);
 }
 
 div.email {
@@ -89,19 +77,61 @@ div.email {
   cursor: pointer;
 }
 
-#about-dialog ul a {
+#about-dialog ul a,
+#about-dialog .email {
+  /* color: var(--main-color); */
+  font-size: 2rem;
+}
+
+button#about-open,
+button#about-close {
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  font-size: medium;
+  cursor: pointer;
   color: var(--main-color);
 }
 
+/* button#about-open, */
+/* button#about-close, */
 #about-dialog ul a,
 #about-dialog .email {
-  font-size: 2rem;
-  text-decoration: underline;
+  display: inline-block;
+  will-change: transform;
+  /* text-decoration: underline; */
+  text-decoration: none;
   text-underline-offset: 0.3em;
   text-decoration-thickness: 1px;
   transition: unset;
   border: none;
   color: var(--main-color);
+}
+
+/* button#about-open::after, */
+/* button#about-close::after, */
+#about-dialog ul a::after,
+#about-dialog .email::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  top: 102.5%;
+  left: 0;
+  background: #fff;
+  transform: scale(0);
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+/* button#about-open:hover::after, */
+/* button#about-close:hover::after, */
+#about-dialog ul a:hover::after,
+#about-dialog .email:hover::after {
+  transform: scale(1);
+  transform-origin: left;
 }
 
 @media (max-width: 640px) {
@@ -112,7 +142,7 @@ div.email {
   }
 
   small {
-    font-size: 0.5rem;
+    /* font-size: 0.5rem; */
   }
 }
 

@@ -54,7 +54,7 @@ header h1 {
   font-weight: 400;
 }
 
-.info {
+/* .info {
   padding: var(--page-padding);
   padding-right: calc(0.5 * var(--page-padding));
 
@@ -67,7 +67,7 @@ header h1 {
   height: 100vh;
 
   transition: 150ms ease-in-out;
-}
+} */
 
 button#about-button {
   margin: 0px;
@@ -95,6 +95,40 @@ footer {
   width: 100%;
 
   /* max-width: var(--max-content-width); */
+}
+
+/* tooltip */
+
+.tooltip__wrapper {
+  position: relative;
+  /* display: inline; */
+  /* border: none; */
+}
+
+.tooltip {
+  display: inline;
+  position: absolute;
+  z-index: 1;
+  user-select: none;
+  font-size: 0.8em;
+  padding: 5px 10px;
+  white-space: nowrap;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: var(--main-color) 1px solid;
+  color: var(--main-color);
+  background-color: var(--secondary-color);
+}
+
+/* additional styles */
+
+.narrow {
+  margin-left: auto;
+  margin-right: auto;
+  /* max-width: var(--max-content-width); */
+  max-width: 1200px;
 }
 
 /* for narrowed window */
@@ -222,38 +256,4 @@ footer {
   .button-download:first-of-type {
     border: none;
   } */
-}
-
-/* tooltip */
-
-.tooltip__wrapper {
-  position: relative;
-  /* display: inline; */
-  /* border: none; */
-}
-
-.tooltip {
-  display: inline;
-  position: absolute;
-  z-index: 1;
-  user-select: none;
-  font-size: 0.8em;
-  padding: 5px 10px;
-  white-space: nowrap;
-  bottom: 125%;
-  left: 50%;
-  transform: translateX(-50%);
-
-  border: var(--main-color) 1px solid;
-  color: var(--main-color);
-  background-color: var(--secondary-color);
-}
-
-/* additional styles */
-
-.narrow {
-  margin-left: auto;
-  margin-right: auto;
-  /* max-width: var(--max-content-width); */
-  max-width: 1200px;
 }

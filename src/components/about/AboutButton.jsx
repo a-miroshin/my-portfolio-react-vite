@@ -13,7 +13,7 @@ export default function AboutModalButton() {
 
   return (
     <>
-      <button onClick={openDialog} id="about-button">
+      <button onClick={openDialog} id="about-open">
         About
       </button>
 

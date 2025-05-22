@@ -35,7 +35,7 @@ const AboutModal = forwardRef((props, ref) => {
         <header>
           <div className="header-content">
             <h1>About</h1>
-            <button onClick={closeDialog} id="close-about">
+            <button onClick={closeDialog} id="about-close">
               back
             </button>
           </div>
