@@ -1,10 +1,11 @@
 .gallery {
   overflow-y: inherit;
   /* padding: 0 4rem; */
+  padding: 0 1rem;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  /* gap: 1rem; */
 
   transition: 150ms ease-in-out;
 }
@@ -25,6 +26,7 @@ a.card {
   transform: scale(1);
   will-change: transition;
   transition: transform 300ms ease-in-out;
+  margin: 1rem;
 
   /* padding: 2rem; */
 }
@@ -62,18 +64,18 @@ a.card {
 
 @media (max-width: 1600px) {
   .gallery {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     margin: 0px;
     overflow-y: auto;
-    gap: 2rem;
+    /* gap: 2rem; */
   }
 }
 
 @media (max-width: 1200px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    /* gap: 2rem; */
   }
 }
 
@@ -81,6 +83,6 @@ a.card {
   .gallery {
     grid-template-columns: 1fr;
     /* gap: var(--grid-gap); */
-    gap: 2rem;
+    /* gap: 2rem; */
   }
 }

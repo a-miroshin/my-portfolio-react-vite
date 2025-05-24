@@ -16,6 +16,11 @@ import "./App.css";
 const App = () => {
   const preferences = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const isDark = preferences;
+
+  useEffect(() => {
+    document.body.setAttribute("data-theme", isDark ? "dark" : "light");
+  }, [isDark]);
+
   const dialogRef = useRef(null);
 
   const openDialog = () => {
@@ -24,10 +29,6 @@ const App = () => {
       document.body.style.overflow = "hidden";
     }
   };
-
-  useEffect(() => {
-    document.body.setAttribute("data-theme", isDark ? "dark" : "light");
-  }, [isDark]);
 
   // const AboutModalButton = () => {
   //   const openDialog = () => {

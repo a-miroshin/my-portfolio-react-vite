@@ -1,55 +1,10 @@
-@supports (font-variation-settings: normal) {
-  :root {
-    font-family: InterVariable, sans-serif;
-  }
-}
-
-:root,
-button,
-a {
-  font-family: Inter, sans-serif;
-  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
-}
-
-/* :root,
-button,
-a {
-  font-family: "Inter", Helvetica, sans-serif;
-} */
-
-/* :root {
-  --true-black: #000000;
-  --black: #111111;
-  --true-white: #ffffff;
-  --white: #dadada;
-  --light-gray: #a3a3a3;
-} */
-
-[data-theme="light"] {
-  --main-color: #000000;
-  --secondary-color: #ffffff;
-  /* --focal-color: var(--true-black); */
-  /* --accent-color: var(--black); */
-}
-
-[data-theme="dark"] {
-  --main-color: #ffffff;
-  --secondary-color: #000000;
-  /* --focal-color: var(--true-white); */
-  /* --accent-color: var(--white); */
-}
-
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-
-  transition: 300ms ease-in-out;
 }
 
-::selection {
-  background-color: var(--main-color); /* Цвет фона выделенного текста */
-  color: var(--secondary-color); /* Цвет текста при выделении */
+:root {
+  display: block;
 }
