@@ -7,7 +7,7 @@
   grid-template-columns: repeat(3, 1fr);
   /* gap: 1rem; */
 
-  transition: 150ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 a.card {

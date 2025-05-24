@@ -27,4 +27,6 @@ dist-ssr
 
 # ...existing code...
 src/Sandbox.jsx
+src/components/info/Info.jsx
+src/components/info/info.css
 # ...existing code...
