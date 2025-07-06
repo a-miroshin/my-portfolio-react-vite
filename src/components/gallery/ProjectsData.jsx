@@ -73,7 +73,7 @@ const ProjectsData = [
   // },
   {
     id: 6,
-    title: "Project 6",
+    title: "The White Box",
     date: "2023-01-06",
     link: null,
     images: [
@@ -99,7 +99,7 @@ const ProjectsData = [
   // },
   {
     id: 9,
-    title: "Project 9",
+    title: "Chain of The Soviets",
     date: "2023-01-09",
     link: null,
     images: [
@@ -119,7 +119,7 @@ const ProjectsData = [
   // },
   {
     id: 11,
-    title: "Project 11",
+    title: "The Stone City",
     date: "2023-01-11",
     link: null,
     images: [
