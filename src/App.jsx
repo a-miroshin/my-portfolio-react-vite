@@ -1,17 +1,9 @@
 import React, { useEffect, forwardRef, useRef } from "react";
 
 import AboutModal from "@components/about/AboutModal";
-import TextWithTooltip from "@components/tooltip/Tooltip";
-import ButtonDownload from "@components/buttons-download/ButtonDownload";
-import cvUrl from "@assets/downloads/Alexander_Miroshin_CV.pdf";
-import PortfolioUrl from "@assets/downloads/Alexander_Miroshin_Portfolio.pdf";
-// import Info from "@components/info/Info";
 import Gallery from "@components/gallery/Gallery";
-// import Footer from "@components/footer/Footer";
-// import AboutButton from "@components/about/AboutButton";
 
 import "./App.css";
-// import AboutModalButton from "@components/about/AboutModalButton";
 
 const App = () => {
   const preferences = window.matchMedia("(prefers-color-scheme: dark)").matches;

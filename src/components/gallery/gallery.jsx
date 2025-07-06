@@ -1,5 +1,5 @@
-// import React from "react";
 import ProjectsData from "./ProjectsData"; // Ensure this path is correct
+import ImageCarousel from "@components/ImageCarousel";
 import "./gallery.css";
 
 // Sort projects by date (newest first)
@@ -15,9 +15,8 @@ const Gallery = () => {
           className="card"
           href={project.link || null} // Ensure this path is correct
         >
-          <div className="image-container">
-            <img src={project.image} alt={project.title} />
-          </div>
+          <ImageCarousel images={project.images} />
+
           {/* <div className="title">{project.title}</div> */}
           {/* <div className="year">{new Date(project.date).getFullYear()}</div> */}
         </a>
