@@ -1,7 +1,7 @@
 import React, { useEffect, forwardRef, useRef } from "react";
 
 import AboutModal from "@components/about/AboutModal";
-import Gallery from "@components/gallery/Gallery";
+import Gallery from "@components/gallery/gallery";
 
 import "./App.css";
 
