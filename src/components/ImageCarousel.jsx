@@ -1,8 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./ImageCarousel.css";
 
 const ImageCarousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Предзагрузка всех изображений
+  useEffect(() => {
+    if (!Array.isArray(images) || images.length === 0) return;
+
+    const preloadImages = () => {
+      images.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+    };
+
+    preloadImages();
+  }, [images]);
 
   if (!Array.isArray(images) || images.length === 0) {
     return <div className="image-container">No images to display.</div>;

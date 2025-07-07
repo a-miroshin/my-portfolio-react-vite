@@ -13,14 +13,18 @@ a {
 
 [data-theme="light"] {
   --main-color: #000000;
+  --main-color-rgb: 0, 0, 0;
   --secondary-color: #ffffff;
+  --secondary-color-rgb: 255, 255, 255;
   /* --focal-color: var(--true-black); */
   /* --accent-color: var(--black); */
 }
 
 [data-theme="dark"] {
   --main-color: #ffffff;
+  --main-color-rgb: 255, 255, 255;
   --secondary-color: #000000;
+  --secondary-color-rgb: 0, 0, 0;
   /* --focal-color: var(--true-white); */
   /* --accent-color: var(--white); */
 }
@@ -50,6 +54,13 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1;
+  background-color: rgba(var(--secondary-color-rgb), 0.75);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  box-shadow: 0 1px 0 rgba(var(--main-color-rgb), 0.1), 
+              0 2px 12px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(var(--main-color-rgb), 0.1);
+  transition: box-shadow 0.2s ease;
 }
 
 .header-content {
@@ -64,9 +75,14 @@ header {
   /* max-width: var(--max-content-width); */
 }
 
+.header-content button {
+  text-shadow: 0 0 8px rgba(var(--secondary-color-rgb), 0.5);
+}
+
 header h1 {
   font-size: medium;
   font-weight: 400;
+  text-shadow: 0 0 8px rgba(var(--secondary-color-rgb), 0.5);
 }
 
 /* .info {
