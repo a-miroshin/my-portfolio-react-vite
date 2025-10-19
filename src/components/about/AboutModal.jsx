@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 
 // import Footer from "@components/footer/Footer";
-import TextWithTooltip from "@components/tooltip/Tooltip";
+// import TextWithTooltip from "@components/tooltip/Tooltip";
 import ButtonDownload from "@components/buttons-download/ButtonDownload";
 import cvUrl from "@assets/downloads/Alexander_Miroshin_CV.pdf";
 import PortfolioUrl from "@assets/downloads/Alexander_Miroshin_Portfolio.pdf";
@@ -13,14 +13,14 @@ import "./about.css";
 const AboutModal = forwardRef((props, ref) => {
   const email = "miroshin.architect@gmail.com";
 
-  const copyEmailToClipboard = async () => {
-    try {
-      await navigator.clipboard.writeText(email);
-      console.log("Email copied to clipboard");
-    } catch (err) {
-      alert("Failed to copy email to clipboard. Please try again.");
-    }
-  };
+  // const copyEmailToClipboard = async () => {
+  //   try {
+  //     await navigator.clipboard.writeText(email);
+  //     console.log("Email copied to clipboard");
+  //   } catch (err) {
+  //     alert("Failed to copy email to clipboard. Please try again.");
+  //   }
+  // };
 
   const closeDialog = () => {
     if (ref.current) {
@@ -56,11 +56,15 @@ const AboutModal = forwardRef((props, ref) => {
               </section>
               <section className="contact-me">
                 <h3>Contact me</h3>
-                <TextWithTooltip text="Copied to clipboard!">
+                {/* <TextWithTooltip text="Copied to clipboard!">
                   <span onClick={copyEmailToClipboard} id="email">
                     {email}
                   </span>
-                </TextWithTooltip>
+                </TextWithTooltip> */}
+                {/* <span id="email">{email}</span> */}
+                <a id="email" href={`mailto:${email}`}>
+                  {email}
+                </a>
                 <h3>Socials</h3>
                 <ul className="socials">
                   <li>
