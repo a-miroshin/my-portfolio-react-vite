@@ -1,6 +1,11 @@
 import React, { useEffect, forwardRef, useRef } from "react";
+import "./i18n"; // initialize i18next
+import LanguageSwitcher from "@components/LanguageSwitcher";
+import Header from "@components/Header";
+import Footer from "@components/Footer";
 
-import AboutModal from "@components/about/AboutModal";
+import About from "@components/about/About";
+// import AboutModal from "@components/about/AboutModal";
 import Gallery from "@components/gallery/Gallery";
 
 import "./App.css";
@@ -13,14 +18,14 @@ const App = () => {
     document.body.setAttribute("data-theme", isDark ? "dark" : "light");
   }, [isDark]);
 
-  const dialogRef = useRef(null);
+  // const dialogRef = useRef(null);
 
-  const openDialog = () => {
-    if (dialogRef.current) {
-      dialogRef.current.showModal();
-      document.body.style.overflow = "hidden";
-    }
-  };
+  // const openDialog = () => {
+  //   if (dialogRef.current) {
+  //     dialogRef.current.showModal();
+  //     document.body.style.overflow = "hidden";
+  //   }
+  // };
 
   // const AboutModalButton = () => {
   //   const openDialog = () => {
@@ -135,24 +140,15 @@ const App = () => {
   return (
     <>
       <div className="portfolio">
-        <header>
-          <div className="header-content">
-            <h1>Alexander Miroshin</h1>
-            <button onClick={openDialog} id="about-open">
-              About
-            </button>
-          </div>
-        </header>
+        <Header />
         <main>
           {/* <Info /> */}
           <Gallery />
-          {/* <Footer /> */}
+          <About />
         </main>
-        <footer>
-          <small>The website is built by its owner</small>
-        </footer>
+        <Footer />
       </div>
-      <AboutModal ref={dialogRef} />
+      {/* <AboutModal ref={dialogRef} /> */}
     </>
   );
 };
