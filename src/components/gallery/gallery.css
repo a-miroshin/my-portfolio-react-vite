@@ -1,7 +1,8 @@
 .gallery {
-  overflow-y: inherit;
+  /* overflow-y: inherit; */
   /* padding: 0 4rem; */
   padding: 0 1rem;
+  padding-top: 2rem;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
