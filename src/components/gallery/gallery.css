@@ -3,7 +3,7 @@
   /* padding: 0 4rem; */
   padding: 0 1rem;
   padding-top: 2rem;
-
+  padding-bottom: 4rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* gap: 1rem; */
@@ -54,13 +54,15 @@ a.card {
 .card .title {
   padding-top: 10px;
   padding-bottom: 5px;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: smaller;
+  font-weight: 300;
   text-align: left;
 }
 
 .card .year {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: left;
 }
 
 @media (max-width: 1600px) {

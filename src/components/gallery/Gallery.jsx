@@ -79,7 +79,7 @@ const Gallery = () => {
         >
           <ImageCarousel images={project.images} />
 
-          {/* <div className="title">{project.title}</div> */}
+          <div className="title">{project.title}</div>
           {/* <div className="year">{new Date(project.date).getFullYear()}</div> */}
         </a>
       ))}
