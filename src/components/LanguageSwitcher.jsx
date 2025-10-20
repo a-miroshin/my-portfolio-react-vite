@@ -23,6 +23,7 @@ const LanguageSwitcher = () => {
       >
         EN
       </button>
+      <span>/</span>
       <button
         onClick={() => change("ru")}
         aria-label="Russian"

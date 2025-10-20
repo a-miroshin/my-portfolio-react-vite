@@ -26,6 +26,8 @@ const ImageCarousel = ({ images }) => {
       <LazyLoadImage
         src={src}
         placeholderSrc={lowSrc}
+        wrapperClassName="img-wrapper"
+        // style={{ width: "100%" }}
         alt={`Slide ${currentIndex + 1}`}
         // effect="blur" // Эффект отключил, потому что подгружается пиксельная картинка локально
       />

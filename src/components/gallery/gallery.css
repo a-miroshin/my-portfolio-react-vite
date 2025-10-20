@@ -23,6 +23,11 @@
   align-content: center;
 }
 
+/*сброс стиля для оборачивателя картинок в lazy-load компоненте */
+.card .img-wrapper {
+  display: block !important;
+}
+
 .card .image-container:hover {
   transform: scale(1.05);
 }
