@@ -1,20 +1,11 @@
 .gallery {
-  /* overflow-y: inherit; */
-  /* padding: 0 4rem; */
   padding: 0 1rem;
   padding-top: 2rem;
   padding-bottom: 4rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* gap: 1rem; */
 
   transition: 300ms ease-in-out;
-}
-
-a.card {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Inherit text color */
-  display: block; /* Ensure link covers entire card */
 }
 
 .card:hover {
@@ -22,14 +13,14 @@ a.card {
 }
 
 .card .image-container {
+  display: block;
   overflow: hidden;
   aspect-ratio: 1 / 1;
   transform: scale(1);
   will-change: transition;
   transition: transform 300ms ease-in-out;
   margin: 1rem;
-
-  /* padding: 2rem; */
+  align-content: center;
 }
 
 .card .image-container:hover {
@@ -37,26 +28,22 @@ a.card {
 }
 
 .card img {
+  display: block;
   width: 100%;
-  height: 100%;
-  /* aspect-ratio: 1 / 1; */
   object-fit: contain;
-  /* will-change: transition;
-  transition: transform 300ms ease-in-out; */
-  user-select: none;
-  /* align-self: stretch; */
+  background-size: contain;
+  background: fixed;
 }
 
-/* .card:hover img {
-  transform: scale(1.05);
-} */
-
 .card .title {
+  /* display: none; */
+  /* text-transform: lowercase; */
   padding-top: 10px;
   padding-bottom: 5px;
-  font-size: smaller;
-  font-weight: 300;
+  /* font-size: smaller; */
+  /* font-weight: 300; */
   text-align: left;
+  color: var(--secondary-color);
 }
 
 .card .year {
@@ -78,14 +65,12 @@ a.card {
 @media (max-width: 1200px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
-    /* gap: 2rem; */
+    /* margin-bottom: 1rem; */
   }
 }
 
 @media (max-width: 640px) {
   .gallery {
     grid-template-columns: 1fr;
-    /* gap: var(--grid-gap); */
-    /* gap: 2rem; */
   }
 }

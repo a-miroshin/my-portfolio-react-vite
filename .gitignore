@@ -26,7 +26,6 @@ dist-ssr
 .vercel
 
 # ...existing code...
-src/Sandbox.jsx
-src/components/info/Info.jsx
-src/components/info/info.css
+src/components/sandbox
+
 # ...existing code...

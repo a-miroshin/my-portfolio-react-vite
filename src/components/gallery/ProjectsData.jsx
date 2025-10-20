@@ -1,19 +1,6 @@
-// import project01_01_img from "@assets/images/previews/project01/01.jpg";
-// import project02_01_img from "@assets/images/previews/project02/01.jpg";
-// import project03_01_img from "@assets/images/previews/project03/01.jpg";
-// import project04_01_img from "@assets/images/previews/project04/01.jpg";
-// import project05_01_img from "@assets/images/previews/project05/01.jpg";
-// import project06_01_img from "@assets/images/previews/project06/01.jpg";
-// import project07_01_img from "@assets/images/previews/project07/01.jpg";
-// import project08_01_img from "@assets/images/previews/project08/01.jpg";
-// import project09_01_img from "@assets/images/previews/project09/01.jpg";
-// import project10_01_img from "@assets/images/previews/project10/01.jpg";
-// import project11_01_img from "@assets/images/previews/project11/01.jpg";
-// import project12_01_img from "@assets/images/previews/project12/01.jpg";
-// import project13_01_img from "@assets/images/previews/project13/01.jpg";
-// import project14_01_img from "@assets/images/previews/project14/01.jpg";
-// import project15_01_img from "@assets/images/previews/project15/01.jpg";
-// import project16_01_img from "@assets/images/previews/project16/01.jpg";
+// project 02
+import project02_01_img from "@assets/images/previews/project02/01.png";
+import project02_01_img_sm from "@assets/images/previews/project02/01-small.png";
 
 // project 06
 import project06_01_img from "@assets/images/previews/project06/01.png";
@@ -39,6 +26,19 @@ import project17_01_img from "@assets/images/previews/project17/project17.png";
 import project15_01_img from "@assets/images/previews/project15/project15.png";
 
 const ProjectsData = [
+  {
+    id: 2,
+    title: "The Frozen Fleet",
+    date: "2021-01-06",
+    link: null,
+    images: [
+      {
+        src: project02_01_img,
+        lowSrc: project02_01_img_sm,
+      },
+    ],
+  },
+
   {
     id: 6,
     title: "The White Booleans",
@@ -87,8 +87,6 @@ const ProjectsData = [
       project11_05_img,
       project11_06_img,
       project11_07_img,
-      // project11_08_img,
-      // project11_09_img,
     ],
   },
 

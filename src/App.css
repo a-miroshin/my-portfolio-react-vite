@@ -78,7 +78,7 @@ h1 {
 .language-switcher {
   display: flex;
   flex-direction: row;
-  gap: 0.25rem;
+  gap: 0.5rem;
 }
 
 .language-switcher button {
@@ -87,15 +87,22 @@ h1 {
   /* text-transform: lowercase; */
   background: none;
   border: none;
-  /* color: var(--main-color); */
 }
 
 .language-switcher button.active {
   color: var(--main-color);
 }
 
+.language-switcher button.active:hover {
+  border-bottom: 1px solid var(--main-color);
+}
+
 .language-switcher button.inactive {
   color: var(--secondary-color);
+}
+
+.language-switcher button.inactive:hover {
+  border-bottom: 1px solid var(--secondary-color);
 }
 
 /* .info {
